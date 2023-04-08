@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans:wght@300;500;700&family=Poppins:ital,wght@1,500&family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+header {
+    background-image: url(../images/filmes.png);
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(10, 1fr);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    grid-column: 1/11;
+}
+
+li {
+    display: inline-block;
+    margin-right: 8px;
+    color: white;
+}
+
+a {
+    font-family: Noto Sans;
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+}
+
+i {
+    margin-right: 8px;
+}
+
+.logo {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo__image {
+    width: 92px;
+    height: 72px;
+}
+
+
+.logo__title {
+    font-family: Josefin Sans;
+    margin-top: 6px;
+    font-size: 16px;
+    color: white;
+}
+
+.home {
+    color: #fd0178;
+}
+
+hr {
+    margin-top: 4px;
+    border-color: #fd0178;
+    display: flex;
+}
+
+h1 {
+    grid-row-start: 5;
+    grid-column: 2/6;
+    color: white;
+    font-family: Inter;
+    font-size: 64px;
+}
+
+h2 {
+    grid-row-start: 7;
+    grid-column: 2/8;
+    color: white;
+    font-family: Inter;
+    font-size: px;
+    font-weight: 200;
+}
+
+.btn {
+    grid-row-start: 8;
+    grid-column-start: 2;
+    display: flex;
+}
+
+.btn__start {
+    background-color: #fd0178;
+    width: 200px;
+    height: 50px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn__plan {
+    background-color: #252c57;
+    width: 200px;
+    height: 50px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 700px) {
+    .menu__links {
+        display: none;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .btn__start, .btn__plan {
+        width: 100px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .btn__start a, .btn__plan a {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .menu__links {
+        display: none;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h1 {
+        grid-row-start: 4;
+        grid-column: 2 /8;
+    }
+
+    h2 {
+        grid-row-start: 6;
+        grid-column: 2 /8;
+    }
+}

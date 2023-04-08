@@ -1,0 +1,21 @@
+@import "header.css";
+@import "categorias__titulo.css";
+@import "filmesprincipais.css";
+@import "footer.css";
+
+* {
+   padding: 0;
+   margin: 0; 
+}
+
+@media only screen and (max-width: 400px){
+   header {
+       width: auto;
+   }
+   main {
+       width: auto;
+   }
+   .movie {
+       width: auto;
+   }
+}
